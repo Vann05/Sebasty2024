@@ -105,9 +105,9 @@ def store_unknown_question(question):
     save_unknown_questions(unknown_questions)
 
 
-# For Camera Settings
-camera = cv2.VideoCapture(0)
+# For Camera Setting
 def generate_frames():
+    camera = cv2.VideoCapture(0)
     while True:
         success, frame = camera.read()
         if not success:
